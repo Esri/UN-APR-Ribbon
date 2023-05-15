@@ -9,7 +9,7 @@ Unified Pipeline ribbon add-in.
 ## Instructions
 
 1. Download this repository as a .zip folder, or clone it to your computer.
-2. Navigate to UnifiedPipelineTools\bin\Release.
+2. Navigate to folder.
 3. Run UnifiedPipelineTools.esriAddinX
 
 ## Requirements
