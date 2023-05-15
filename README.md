@@ -1,6 +1,6 @@
 # UN-APR Ribbon
 
-This repsository hosts an ArcGIS Pro ribbon add-in which constist of common tools that are used in UN and APR workflows.
+This repsository hosts an ArcGIS Pro add-in which provided common UN-APR tools within a single ribbon.
 
 ## Features
 
