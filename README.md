@@ -9,8 +9,13 @@ Unified Pipeline ribbon add-in.
 ## Instructions
 
 1. Download this repository as a .zip folder, or clone it to your computer.
-2. Navigate to folder.
-3. Run UnifiedPipelineTools.esriAddinX
+2. Close any ArcGIS Pro projects that are open.
+3. Browse to the downloaded UnifiedPipelineTools folder and extract its contents. 
+4. Browse to and run UnifiedPipelineTools.esriAddinX
+5. Click Install Add-In on the Esri ArcGIS Add-In Installation Utility dialog box. The add-in is installed.
+6. Click OK.
+7. Open ArcGIS Pro.
+
 
 ## Requirements
 
@@ -19,7 +24,7 @@ Unified Pipeline ribbon add-in.
 ## Resources
 
 - [Pipeline Referencing product documentation](https://pro.arcgis.com/en/pro-app/latest/help/production/location-referencing-pipelines//)
-- [Help doc: Installing and Using Unified Pipeline Tools add-in](https://github.com/ArcGIS/UN-APR-Ribbon/blob/main/UnifiedPipelineToolsHelp.docx)
+- [Help doc: Installing and Using Unified Pipeline Tools add-in](https://github.com/ArcGIS/UN-APR-Ribbon/blob/main/UnifiedPipelineToolsHelp.docx) Download to view full content
 
 ## Issues
 
