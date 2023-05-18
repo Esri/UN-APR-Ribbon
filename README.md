@@ -19,6 +19,7 @@ Unified Pipeline ribbon add-in.
 ## Resources
 
 - [Pipeline Referencing product documentation](https://pro.arcgis.com/en/pro-app/latest/help/production/location-referencing-pipelines//)
+- [Help doc: Installing and Using Unified Pipeline Tools add-in](https://github.com/ArcGIS/UN-APR-Ribbon/blob/main/UnifiedPipelineToolsHelp.docx)
 
 ## Issues
 
