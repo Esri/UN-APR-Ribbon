@@ -64,7 +64,7 @@ Zoom To ![Zoom To](./Images/ZoomTo.png)| Zoom to selected features.
 Create Route ![Create Route](./Images/CreateRoute.png)| Create routes in an LRS Network using centerline features that define the location and geometry of a route.
 Extend Route ![Extend Route](./Images/ExtendRoute.png)| Extend a route in ArcGIS Pipeline Referencing by adding length to the beginning or end of it.
 Realign Route ![Realign Route](./Images/RealignRoute.png)| Realign a single route or several adjoining routes that are part of the same line.
-Reassign Route ![Reassign Route](./Images/Reassign Route.png)| Reassign all or a portion of a route or line to the immediate upstream or downstream of another route or line.
+Reassign Route ![Reassign Route](./Images/ReassignRoute.png)| Reassign all or a portion of a route or line to the immediate upstream or downstream of another route or line.
 Retire Route ![Retire Route](./Images/RetireRoute.png)| Retire a route segment, an entire route, or multiple adjoining routes that belong to the same line for the specified time frame.
 Reverse Route ![Reverse Route](./Images/ReverseRoute.png)| Reverse the route direction.
 Add Calibration Points ![Add Calibration Points](./Images/AddCalibrationPoints.png)| Add calibration points to a route.
