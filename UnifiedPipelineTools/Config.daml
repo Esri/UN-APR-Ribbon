@@ -9,8 +9,8 @@
 	<Name>UnifiedPipelineTools</Name>   
 	<Description>UnifiedPipelineTools description</Description>
 	<Image>Images\AddinDesktop32.png</Image>
-	<Author>dani5393</Author>
-	<Company>ESRI</Company>
+	<Author>Esri</Author>
+	<Company>Esri</Company>
 	<Date>3/13/2023 11:37:30 AM</Date>
 	<Subject>Framework</Subject>
 	<!-- Note subject can be one or more of these topics:
