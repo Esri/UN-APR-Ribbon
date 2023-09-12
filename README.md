@@ -36,7 +36,7 @@ Note: You can also choose to further [manage](https://pro.arcgis.com/en/pro-app/
 ## Resources
 
 - [Pipeline Referencing product documentation](https://pro.arcgis.com/en/pro-app/latest/help/production/location-referencing-pipelines)
-- [Help doc: Installing and Using Unified Pipeline Tools add-in](UnifiedPipelineToolsHelp.pdf?raw=1) Download to view full content
+- [PDF Help doc: Installing and Using Unified Pipeline Tools add-in](UnifiedPipelineToolsHelp.pdf)
 
 Tool | Description
 -- | --
@@ -71,16 +71,16 @@ Add Calibration Points ![Add Calibration Points](./Images/AddCalibrationPoints.p
 Edit Calibration Points ![Edit Calibration Points](./Images/EditCalibrationPoints.png)| Edit and modify route calibration points.
 Delete Calibration Points ![Delete Calibration Points](./Images/DeleteCalibrationPoints.png)| Delete calibration points on a route.
 Identify Routes ![Identify Routes](./Images/IdentifyRoutes.png)| Identify routes, their measures, and locking information. Click the Identify Routes tool and then a route.
-Locate Route and Measures ![Locate Route and Measures](./Images/LocateRouteAndMeasures.png)| Search for a route and locate measures on it. 
+Locate Route and Measures ![Locate Route and Measures](./Images/LocateRoutesAndMeasures.png)| Search for a route and locate measures on it. 
 Translate ![Translate](./Images/Translate.png)| Translate between route ID and route name, as well as line ID and line name. Measures can also be translated between coincident or intersecting routes of the same or different networks.
 Set Time Filter ![ZoomTo](./Images/SetTimeFilter.png)| Configure the time view for LRS-managed layers. 
 LRS Locks ![LRS Locks](./Images/LRSLocks.png)| Review and release line, route, and event locks. 
 Release Locks ![Release Locks](./Images/ReleaseLocks.png)| Release any lock whose releasable state value is Yes. Learn more about releasable states
-Add Events ![Add Events](./Images/AddEvents.png)| Add events of the following type:
-<br/> | Point|
-<br/> | Line|
-<br/>| Multiple Points|
-<br/>| Multiple Lines|
+Add Events | Add events of the following type:
+<br/> | Point ![Point](./Images/Point.png)
+<br/> | Line ![Line](./Images/Line.png)
+<br/>| Multiple Points ![Multiple Points](./Images/MultiplePoints.png)
+<br/>| Multiple Lines ![Multiple Lines](./Images/MultipleLines.png)
 Split ![Split](./Images/Split.png)| Split a line event into two adjoining events. 
 Merge ![Merge](./Images/Merge.png)| Combine multiple adjoining events into a target event.
 DynSeg ![DynSeg](./Images/DynSeg.png)| Create an output where the events on a route are dynamically segmented together into one record set. The tool returns separate records at any measure along the event where any of the attributes change. |  
@@ -90,8 +90,8 @@ Replace ![Replace](./Images/Replace.png)| Update events that were part of a repl
 ***Utility Network Tools***|
 Validate ![Validate](./Images/Validate.png)| Keep the network topology updated for analytic events. Dirty areas serve as an indicator that the content you see on the map does not match what is stored in the network topology.
 Error Inspector ![Error Inspector](./Images/ErrorInspector.png)| Validate and fix geodatabase
-Terminal Connections ![Terminal Connections](./Images/Terminal Connections.png)| Set a terminal connection between a line and a terminal on a device feature, change the terminal to which the line is connected, or disconnect a line from a device terminal.
-Modify ![Modify](./Images/Modify.png) | Launch the Modify Associations pane to manage containment associations between existing network features.
+Terminal Connections ![Terminal Connections](./Images/TerminalConnections.png)| Set a terminal connection between a line and a terminal on a device feature, change the terminal to which the line is connected, or disconnect a line from a device terminal.
+Modify ![Modify Associations](./Images/ModifyAssociations.png) | Launch the Modify Associations pane to manage containment associations between existing network features.
 Enter Containment ![Enter Containment](./Images/EnterContainment.png)| Enter the containment edit mode to automatically create the containment association when creating content features inside an existing container.
 Exit Containment ![Exit Containment](./Images/ExitContainment.png)| Exit containment edit mode.
 Display Content ![Display Content](./Images/DisplayContent.png)| Show or hide containment association content. This enables or disables display filters configured using the association status attribute to turn content feature display on and off based on their visibility property.
