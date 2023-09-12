@@ -53,51 +53,52 @@ Delete ![Delete](./Images/Delete.png)| Delete selected features or parts of a mu
 Save ![Save](./Images/Save.png)| Save the edits you make to a map or a scene including added or removed layers or maps, and changes to data sources.
 Discard ![Discard](./Images/Discard.png)| Discard the edits you make to a map or a scene including added or removed layers or maps, and changes to data sources.
 Mode ![Mode](./Images/Mode.png)| Assign default z-values when you create z-aware features, or set the elevation mode to apply a constant z-value, or get z-values dynamically from an elevation surface layer.
-Elevation Value ![Elevation Value](./Images/ElevationValue.png)| Provide a z-value to be set as the constant elevation for the newly created features.
-Map Surfaces ![Map Surfaces](./Images/MapSurfaces.png)| Select a surface from the available elevation map surfaces to get z-values from the map.
+Elevation Value | Provide a z-value to be set as the constant elevation for the newly created features.
+Map Surfaces | Select a surface from the available elevation map surfaces to get z-values from the map.
 Get Z From View ![Get Z From View](./Images/GetZFromView.png)| Obtain a constant elevation from the available map surfaces.
 Select ![Select](./Images/Select.png)| Select features on the map or choose a selection method.
 Attributes ![Attributes](./Images/Attributes.png)| View attribute values or edit them in the Attributes pane.
 Clear ![Clear](./Images/Clear.png)| Clear selected features.
 Zoom To ![Zoom To](./Images/ZoomTo.png)| Zoom to selected features.
 ***Pipeline Referencing Tools*** |  
-Create Route | Create routes in an LRS Network using centerline features that define the location and geometry of a route. |  
-Extend Route | Extend a route in ArcGIS Pipeline Referencing by adding length to the beginning or end of it. |  
-Realign Route | Realign a single route or several adjoining routes that are part of the same line. |  
-Reassign Route | Reassign all or a portion of a route or line to the immediate upstream or downstream of another route or line. |  
-Retire Route | Retire a route segment, an entire route, or multiple adjoining routes that belong to the same line for the specified time frame. |  
-Reverse Route | Reverse the route direction. |  
-Add Calibration Points | Add calibration points to a route. |  
-Edit Calibration Points | Edit and modify route calibration points. |  
-Delete Calibration Points | Delete calibration points on a route. |  
-Identify Routes | Identify routes, their measures, and locking information. Click the Identify Routes tool and then a route.
-Locate Route and Measures | Search for a route and locate measures on it. |  
-Translate | Translate between route ID and route name, as well as line ID and line name. Measures can also be translated between coincident or intersecting routes of the same or different networks. |  
-Set Time Filter | Configure the time view for LRS-managed layers. |  
-LRS Locks | Review and release line, route, and event locks. |  
-Release Locks | Release any lock whose releasable state value is Yes. Learn more about releasable states
-Add Events | Add events of the following type: |
+Create Route ![Create Route](./Images/CreateRoute.png)| Create routes in an LRS Network using centerline features that define the location and geometry of a route.
+Extend Route ![Extend Route](./Images/ExtendRoute.png)| Extend a route in ArcGIS Pipeline Referencing by adding length to the beginning or end of it.
+Realign Route ![Realign Route](./Images/RealignRoute.png)| Realign a single route or several adjoining routes that are part of the same line.
+Reassign Route ![Reassign Route](./Images/Reassign Route.png)| Reassign all or a portion of a route or line to the immediate upstream or downstream of another route or line.
+Retire Route ![Retire Route](./Images/RetireRoute.png)| Retire a route segment, an entire route, or multiple adjoining routes that belong to the same line for the specified time frame.
+Reverse Route ![Reverse Route](./Images/ReverseRoute.png)| Reverse the route direction.
+Add Calibration Points ![Add Calibration Points](./Images/AddCalibrationPoints.png)| Add calibration points to a route.
+Edit Calibration Points ![Edit Calibration Points](./Images/EditCalibrationPoints.png)| Edit and modify route calibration points.
+Delete Calibration Points ![Delete Calibration Points](./Images/DeleteCalibrationPoints.png)| Delete calibration points on a route.
+Identify Routes ![Identify Routes](./Images/IdentifyRoutes.png)| Identify routes, their measures, and locking information. Click the Identify Routes tool and then a route.
+Locate Route and Measures ![Locate Route and Measures](./Images/LocateRouteAndMeasures.png)| Search for a route and locate measures on it. 
+Translate ![Translate](./Images/Translate.png)| Translate between route ID and route name, as well as line ID and line name. Measures can also be translated between coincident or intersecting routes of the same or different networks.
+Set Time Filter ![ZoomTo](./Images/SetTimeFilter.png)| Configure the time view for LRS-managed layers. 
+LRS Locks ![LRS Locks](./Images/LRSLocks.png)| Review and release line, route, and event locks. 
+Release Locks ![Release Locks](./Images/ReleaseLocks.png)| Release any lock whose releasable state value is Yes. Learn more about releasable states
+Add Events ![Add Events](./Images/AddEvents.png)| Add events of the following type:
 <br/> | Point|
 <br/> | Line|
 <br/>| Multiple Points|
 <br/>| Multiple Lines|
-Split | Split a line event into two adjoining events. |  
-Merge | Combine multiple adjoining events into a target event. |  
-DynSeg | Create an output where the events on a route are dynamically segmented together into one record set. The tool returns separate records at any measure along the event where any of the attributes change. |  
-Attribute Sets | Use a collection of event layer attributes to create multiple events with a set of additional, organization-specific attributes in a single edit. |  
-Configure Replacement | Categorize event layers before event replacement. The measures for the route do not change during event replacement. |  
-Replace | Update events that were part of a replaced pipe using an event replacement configuration that groups event layers so that multiple events can be retired or replaced by new events in a single editing operation. |  
+Split ![Split](./Images/Split.png)| Split a line event into two adjoining events. 
+Merge ![Merge](./Images/Merge.png)| Combine multiple adjoining events into a target event.
+DynSeg ![DynSeg](./Images/DynSeg.png)| Create an output where the events on a route are dynamically segmented together into one record set. The tool returns separate records at any measure along the event where any of the attributes change. |  
+Attribute Sets ![Attribute Sets](./Images/AttributeSets.png)| Use a collection of event layer attributes to create multiple events with a set of additional, organization-specific attributes in a single edit. |  
+Configure Replacement ![Configure Replacement](./Images/ConfigureReplacement.png)| Categorize event layers before event replacement. The measures for the route do not change during event replacement. |  
+Replace ![Replace](./Images/Replace.png)| Update events that were part of a replaced pipe using an event replacement configuration that groups event layers so that multiple events can be retired or replaced by new events in a single editing operation. |  
 ***Utility Network Tools***|
-Validate | Keep the network topology updated for analytic events. Dirty areas serve as an indicator that the content you see on the map does not match what is stored in the network topology.
-Error Inspector | Validate and fix geodatabase
-Terminal Connections | Set a terminal connection between a line and a terminal on a device feature, change the terminal to which the line is connected, or disconnect a line from a device terminal.
-Modify | Launch the Modify Associations pane to manage containment associations between existing network features.
-Enter Containment | Enter the containment edit mode to automatically create the containment association when creating content features inside an existing container.
-Exit Containment | Exit containment edit mode.
-Display Content | Show or hide containment association content. This enables or disables display filters configured using the association status attribute to turn content feature display on and off based on their visibility property.
-View | View connectivity or structural attachment associations on the map.
-Trace Locations | Set starting points, barriers, or clear all trace locations.
-Modify Controller | Modify an existing subnetwork
+Validate ![Validate](./Images/Validate.png)| Keep the network topology updated for analytic events. Dirty areas serve as an indicator that the content you see on the map does not match what is stored in the network topology.
+Error Inspector ![Error Inspector](./Images/ErrorInspector.png)| Validate and fix geodatabase
+Terminal Connections ![Terminal Connections](./Images/Terminal Connections.png)| Set a terminal connection between a line and a terminal on a device feature, change the terminal to which the line is connected, or disconnect a line from a device terminal.
+Modify ![Modify](./Images/Modify.png) | Launch the Modify Associations pane to manage containment associations between existing network features.
+Enter Containment ![Enter Containment](./Images/EnterContainment.png)| Enter the containment edit mode to automatically create the containment association when creating content features inside an existing container.
+Exit Containment ![Exit Containment](./Images/ExitContainment.png)| Exit containment edit mode.
+Display Content ![Display Content](./Images/DisplayContent.png)| Show or hide containment association content. This enables or disables display filters configured using the association status attribute to turn content feature display on and off based on their visibility property.
+View ![View](./Images/View.png)| View connectivity or structural attachment associations on the map.
+Trace Locations ![Trace Locations](./Images/TraceLocations.png)| Set starting points, barriers, or clear all trace locations.
+Modify Controller ![Modify Controller](./Images/ModifyController.png)| Modify an existing subnetwork
+
 ## Issues
 
 Find a bug or want to request a new feature? Please let us know by submitting an issue.
