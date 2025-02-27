@@ -57,6 +57,7 @@
 					<button refID="esri_locationreferencing_setTimeButton" size="middle" />
 					<button refID="esri_locationReferencing_LocksTableViewButton" size="middle" />
 					<button refID="esri_locationreferencing_releaseLocksButton" size="middle" />
+					<button refID="esri_locationreferencing_processEditsButton" size="middle"/>
 				</group>
 				<group id="esri_unaprUnified_eventsGroup" caption="Events" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddPointEvent16.png">
 					<toolPalette refID="esri_locationreferencing_addEvents" size="large"/>
