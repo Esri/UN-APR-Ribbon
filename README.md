@@ -76,6 +76,7 @@ Translate ![Translate](./Images/Translate.png)| Translate between route ID and r
 Set Time Filter ![ZoomTo](./Images/SetTimeFilter.png)| Configure the time view for LRS-managed layers. 
 LRS Locks ![LRS Locks](./Images/LRSLocks.png)| Review and release line, route, and event locks. 
 Release Locks ![Release Locks](./Images/ReleaseLocks.png)| Release any lock whose releasable state value is Yes. Learn more about releasable states
+Process Edits ![Process Edits](./Images/ProcessEdits.png)| Run common post route editing tools in one click. This tool appears in the Unified Pipeline Tools tab with ArcGIS Pro 3.4 and above.
 Add Events | Add events of the following type:
 <br/> | Point ![Point](./Images/Point.png)
 <br/> | Line ![Line](./Images/Line.png)
