@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="UnifiedPipelineTools.dll"
+        defaultNamespace="UnifiedPipelineTools"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/ArcGIS/bin/ArcGIS.Desktop.Framework.xsd">
+
+	<AddInInfo id="{03a4422e-390d-4810-9cf1-2225a5b6e6c2}" version="1.2" desktopVersion="3.8">
+	<Name>UnifiedPipelineTools</Name>   
+	<Description>Commonly used tools for working with Linear Referencing and Utility Network data.</Description>
+	<Image>Images\AddinDesktop32.png</Image>
+	<Author>Esri</Author>
+	<Company>ESRI</Company>
+	<Date>11/5/2026</Date>
+	<Subject>Framework</Subject>
+	<!-- Note subject can be one or more of these topics:
+					Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+	</AddInInfo>
+
+	<modules>
+		<insertModule id="UnifiedPipelineTools_Module" className="Module1" autoLoad="false" caption="Module1">
+      <controls>
+        <button id="esri_linearReferencing_createRouteButton" caption="Create" extendedCaption="Route Editing" className="esri_linearreferencing_module:ShowCreateRouteView" keytip="CT"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/CreateRoute16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/CreateRoute32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="">
+            Create a new route.<disabledText></disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearReferencing_realignRouteButton" caption="Realign" extendedCaption="Route Editing" className="esri_linearreferencing_module:ShowRealignRouteView" keytip="RL"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/RealignRoute16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/RealignRoute32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="">
+            Realign a route.<disabledText></disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearReferencing_extendRouteButton" caption="Extend" extendedCaption="Route Editing" className="esri_linearreferencing_module:ShowExtendRouteView" keytip="EX"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ExtendRoute16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ExtendRoute32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="">
+            Extend a route at the beginning or end.<disabledText></disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearReferencing_retireRouteButton" caption="Retire" extendedCaption="Route Editing" className="esri_linearreferencing_module:ShowRetireRouteView" keytip="RT"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/RetireRoute16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/RetireRoute32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="">
+            Retire a portion of a route or an entire route.<disabledText></disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearReferencing_reassignRouteButton" caption="Reassign" extendedCaption="Route Editing" className="esri_linearreferencing_module:ShowReassignRouteView" keytip="RS"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ReassignRoute16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ReassignRoute32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="">
+            Reassign a portion of a route or an entire route to a new route.<disabledText></disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearReferencing_reverseRouteButton" caption="Reverse" extendedCaption="Route Editing" className="esri_linearreferencing_module:ShowReverseRouteView" keytip="RV"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ReverseRoute16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ReverseRoute32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="">
+            Reverse the calibration of routes.<disabledText></disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_addPointEventButton" className="esri_linearreferencing_module:ShowAddPointEventView" caption="Point Event" extendedCaption="Event Editing" keytip="AP"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddPointEvent16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddPointEvent32.png" condition="esri_linearreferencing_enableEventsCondition">
+          <tooltip heading="Add A Single Point Event">
+            Add a single point event.
+            <disabledText>This command is available when you are signed in to an ArcGIS Enterprise portal and have a branch versioned LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_addLineEventButton" className="esri_linearreferencing_module:ShowAddLineEventView" caption="Line Event" extendedCaption="Event Editing" keytip="AL"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddLineEvent16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddLineEvent32.png" condition="esri_linearreferencing_enableEventsCondition">
+          <tooltip heading="Add A Single Line Event">
+            Add a single line event.
+            <disabledText>This command is available when you are signed in to an ArcGIS Enterprise portal and have a branch versioned LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_addMultiplePointEventsButton" className="esri_linearreferencing_module:ShowAddMultiplePointEventsView" caption="Multiple Point Events" extendedCaption="Event Editing" keytip="MP"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddMultiplePointEvents16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddMultiplePointEvents32.png" condition="esri_linearreferencing_enableEventsCondition">
+          <tooltip heading="Add Multiple Point Events">
+            Add multiple point events.
+            <disabledText>This command is available when you are signed in to an ArcGIS Enterprise portal and have a branch versioned LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_addMultipleLineEventsButton" className="esri_linearreferencing_module:ShowAddMultipleLineEventsView" caption="Multiple Line Events" extendedCaption="Event Editing" keytip="ML"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddMultipleLineEvents16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddMultipleLineEvents32.png" condition="esri_linearreferencing_enableEventsCondition">
+          <tooltip heading="Add Multiple Line Events">
+            Add multiple line events.
+            <disabledText>This command is available when you are signed in to an ArcGIS Enterprise portal and have a branch versioned LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_eventReplacementButton" className="esri_linearreferencing_module:ShowEventReplacementView" caption="Replace" extendedCaption="Event Editing" keytip="ER"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/EventReplacement16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/EventReplacement32.png" condition="esri_linearreferencing_enableEventReplacementCondition">
+          <tooltip heading="Replace Events">
+            Retire and/or replace events in a single edit operation.
+            <disabledText>This command is available when you have a branch versioned LRS feature service layer in the map and at least one event replacement configured.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_splitEventButton" className="esri_linearreferencing_module:ShowSplitEventView" caption="Split" extendedCaption="Event Editing" keytip="SE"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/SplitEvents16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/SplitEvents32.png" condition="esri_linearreferencing_enableEventsCondition">
+          <tooltip heading="Split Event">
+            Split a line event into two events.
+            <disabledText>This command is available when you are signed in to an ArcGIS Enterprise portal and have a branch versioned LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_mergeEventsButton" className="esri_linearreferencing_module:ShowMergeEventsView" caption="Merge" extendedCaption="Event Editing" keytip="ME"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/MergeEvents16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/MergeEvents32.png" condition="esri_linearreferencing_enableEventsCondition">
+          <tooltip heading="Merge Events">
+            Merge line events into one event.
+            <disabledText>This command is available when you are signed in to an ArcGIS Enterprise portal and have a branch versioned LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_dynamicSegmentationButton" className="esri_linearreferencing_module:ShowDynamicSegmentationView" caption="DynSeg" extendedCaption="Event Editing" keytip="DS"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/DynamicSegmentation16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/DynamicSegmentation32.png" condition="esri_linearreferencing_enableEventsCondition">
+          <tooltip heading="Dynamic Segmentation">
+            Create dynamic segmentation on events based on the selected attribute set and routes.
+            <disabledText>This command is available when you are signed in to an ArcGIS Enterprise portal and have a branch versioned LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_attribute_sets" className="esri_linearreferencing_module:ShowAttributeSetView" caption="Attribute Sets" extendedCaption="Configure Attribute Sets" keytip="AS"
+                smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AttributesWindow16.png"
+                largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AttributesWindow32.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Configure Attribute Sets">
+            Configure attribute sets for event editing.
+            <disabledText>This command is available when you have an LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+        <button id="esri_linearreferencing_configure_event_replacement" className="esri_linearreferencing_module:ShowConfigureEventReplacement" caption="Configure Replacement" extendedCaption="Event Editing" keytip="CR"
+        smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ConfigureEventReplacement16.png"
+        largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ConfigureEventReplacement32.png" condition="esri_linearreferencing_enableConfigureAttributesCondition">
+          <tooltip heading="Configure Replace Events">
+            Configure event replacement.
+            <disabledText>This command is available when you have a branch versioned LRS feature service layer in the map.</disabledText>
+          </tooltip>
+        </button>
+      </controls>      
+			<tabs>
+				<tab id="UnifiedPipelineTools_Tab1" caption="Unified Pipeline Tools">
+					<group refID="esri_unaprUnified_mapGroup"/>
+					<group refID="esri_core_clipboardGroup"/>
+					<group refID="esri_unaprUnified_editsGroup"/>
+					<group refID="esri_editing_selectionGroup"/>
+					<group refID="esri_unaprUnified_routesGroup"/>
+					<group refID="esri_unaprUnified_toolsGroup"/>
+					<group refID="esri_unaprUnified_eventsGroup"/>
+					<group refID="esri_unaprUnified_utilityNetworkGroup"/> 
+				</tab>
+			</tabs>
+              
+			<groups>
+				<group id="esri_unaprUnified_mapGroup" caption="Map" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/3DNavigationTool16.png">
+					<tool refID="esri_mapping_exploreSplitButton" size="large" />
+					<gallery refID="esri_mapping_bookmarksNavigateGallery" inline="false" size="large" />
+				</group>
+				<group id="esri_unaprUnified_editsGroup" caption="Edits" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/EditingSaveEdits_B_16.png">
+					<button refID="esri_editing_SaveEditsBtn" size="middle" />
+					<button refID="esri_editing_DiscardEditsBtn" size="middle" />
+					<button refID="esri_editing_ShowCreateFeaturesBtn" size="middle" />
+					<button refID="esri_editing_ShowEditFeaturesBtn" size="middle" />
+					<button refID="esri_editing_DelSelFeaturesBtn" size="middle" />
+					<button refID="esri_editing_ElevationModeSplitButton" size="large" />
+					<customControl refID="esri_editing_ElevationTools" size="large" />
+				</group>
+				<group id="esri_unaprUnified_routesGroup" caption="Routes" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/CreateRoute16.png">
+					<buttonPalette refID="esri_unaprUnified_routeEditingConfiguration" size="large"/>
+					<toolPalette refID="esri_unaprUnified_calibrationPointTool" size="large"/>
+					<button refID="esri_linearreferencing_identifyRoutesTool" size="middle"/>
+					<customControl refID="esri_linearreferencing_locateroutesandmeasures_customcontrol" size="middle" />
+					<customControl refID="esri_linearreferencing_translate_customcontrol" size="middle" />	
+				</group>
+				<group id="esri_unaprUnified_toolsGroup" caption="Tools" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/LRSTimeSet16.png">
+					<button refID="esri_linearreferencing_setTimeButton" size="middle" />
+					<button refID="esri_linearReferencing_LocksTableViewButton" size="middle" />
+					<button refID="esri_linearreferencing_releaseLocksButton" size="middle" />
+          <button refID="esri_linearreferencing_processEditsButton" size="middle"/>
+				</group>
+				<group id="esri_unaprUnified_eventsGroup" caption="Events" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/AddPointEvent16.png">
+					<toolPalette refID="esri_linearreferencing_addEvents" size="large"/>
+					<button refID="esri_linearreferencing_splitEventButton" size="middle"/>
+					<button refID="esri_linearreferencing_mergeEventsButton" size="middle"/>
+					<button refID="esri_linearreferencing_dynamicSegmentationButton" size="middle"/>
+					<button refID="esri_linearreferencing_attribute_sets" size="middle"/>
+					<button refID="esri_linearreferencing_configure_event_replacement" size="middle"/>
+					<button refID="esri_linearreferencing_eventReplacementButton" size="middle"/>
+				</group>
+				<group id="esri_unaprUnified_utilityNetworkGroup" caption="Utility Network" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/ModifyConnection16.png">
+					<toolPalette refID="esri_networkanalysis_utility_ValidateBtnPalette" size="large"/>
+					<button refID="esri_editing_ShowUNErrorsErrorInspectorBtn" size="middle" />
+					<button refID="esri_networkanalysis_ShowModifyConnectionBtn" size="middle"/>
+					<button refID="esri_networkanalysis_ShowModifyAssociationsBtn" size="middle"/>
+					<button refID="esri_networkanalysis_utility_Containment_Btn" size="middle"/>
+					<button refID="esri_networkanalysis_utility_Container_EditMode_Btn" size="middle"/>
+					<button refID="esri_networkanalysis_utility_DisplayFilterBtnPalette" size="middle"/>
+					<button refID="esri_networkanalysis_utility_View_Associations_Mode_Btn" size="large"/>
+					<toolPalette refID="esri_networkanalysis_utility_SetTracingLocationsBtnPalette" size="large"/>
+					<button refID="esri_networkanalysis_utility_ShowModifySourceBtn" size="large"/>
+				</group>	
+			</groups>
+			
+			<palettes>
+				<toolPalette id="esri_unaprUnified_routeEditingConfiguration" caption="Routes" itemsInRow="1" showItemCaption="true" extendedCaption="Route editing tools">
+					<tool refID="esri_linearReferencing_createRouteButton"/>
+					<tool refID="esri_linearReferencing_realignRouteButton"/>
+					<tool refID="esri_linearReferencing_extendRouteButton"/>
+					<tool refID="esri_linearReferencing_retireRouteButton"/>
+					<tool refID="esri_linearReferencing_reassignRouteButton"/>
+					<tool refID="esri_linearReferencing_reverseRouteButton"/>
+				</toolPalette>
+				<toolPalette id="esri_unaprUnified_calibrationPointTool" caption="Calibration Points" itemsInRow="1" showItemCaption="true" extendedCaption="Calibration point editing tools">
+					<tool refID="esri_linearreferencing_addCalibrationPointTool"/>
+					<tool refID="esri_linearreferencing_editCalibrationPointTool"/>
+					<tool refID="esri_linearreferencing_deleteCalibrationPointTool"/>
+				</toolPalette>
+        <toolPalette id="esri_linearreferencing_addEvents" itemsInRow="1" showItemCaption="true" caption="Add" extendedCaption="Event Editing">
+          <tool refID="esri_linearreferencing_addPointEventButton"/>
+          <tool refID="esri_linearreferencing_addLineEventButton"/>
+          <tool refID="esri_linearreferencing_addMultiplePointEventsButton"/>
+          <tool refID="esri_linearreferencing_addMultipleLineEventsButton"/>
+        </toolPalette>
+      </palettes>
+		</insertModule>
+	</modules>
+</ArcGIS>
